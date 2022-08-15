@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <script src="jquery-3.5.1.min.js"></script>
+  <script src="day.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
   <!-- 웹폰트 -->
@@ -66,10 +67,34 @@
       <h2 class="name">조현우 / 임현애</h2>
       <p class="info">
         2022.10.16 (일) 오후 12:30<br>
-        이룸 웨딩 컨벤션 5층 미소실
+        이룸 웨딩 컨벤션 5층 단독홀
       </p>
     </div>
   </section>
+
+  <section id="calender">
+    <div class="sec_cal">
+      <div class="cal_nav">
+        <a href="javascript:;" class="nav-btn go-prev">prev</a>
+        <div class="year-month"></div>
+        <a href="javascript:;" class="nav-btn go-next">next</a>
+      </div>
+      <div class="cal_wrap">
+        <div class="days">
+          <div class="day">SUN</div>
+          <div class="day">MON</div>
+          <div class="day">TUE</div>
+          <div class="day">WED</div>
+          <div class="day">THU</div>
+          <div class="day">FRI</div>
+          <div class="day">SAT</div>
+        </div>
+        <div class="dates"></div>
+      </div>
+      <div id="count"></div>
+    </div>
+  </section>
+
 
   <!-- invitation -->
   <section id="invitation">
@@ -309,16 +334,14 @@
       <a href="https://map.kakao.com/link/to/이룸웨딩컨벤션,37.54184697918148,126.94972508194813"><img class="icon" src="images/카카오맵.png" alt="카카오맵">
         <p>카카오맵</p>
       </a>
-      <a href="tmap://route?goalname=분당서울대병원&goalx=127.122930&goaly=37.351987"><img class="icon" src="images/카카오내비.png" alt="카카오내비">
-        <p>카카오내비</p>
-      </a>
-      <a href="tmap://route?goalname=분당서울대병원&goalx=127.122930&goaly=37.351987"><img class="icon" src="images/tmap.svg" alt="카카오내비">
+    <a href="tmap://route?goalname=분당서울대병원&goalx=127.122930&goaly=37.351987"><img class="icon" src="images/네이버지도.png" alt="네이버지도">
         <p>네이버지도</p>
       </a>
       <a href="https://map.google.co.kr/maps/place/%EC%9D%B4%EB%A3%B8%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/data=!3m1!4b1!4m5!3m4!1s0x357c98a6f5399ceb:0xc8838010b4487577!8m2!3d37.5418706!4d126.9497508"><img class="icon" src="images/Google_Maps.svg" alt="구글지도">
         <p>구글지도</p>
       </a>
-      <a href="tmap://route?goalname=이룸웨딩컨벤션&goalx=126.94972508194813&goaly=37.54184697918148"><img class="icon" src="images/tmap.svg" alt="티맵">
+        <!-- <a href="tmap://route?goalname=이룸웨딩컨벤션&goalx=126.94972508194813&goaly=37.54184697918148"><img class="icon" src="images/tmap.svg" alt="티맵"> -->
+        <a href="https://poiweb.tmap.co.kr/app/share/position?contents=cGtleT0yNzg3MDYyMDAmcG9pSWQ9Mjc4NzA2MiZuYXZTZXE9MCZ0eXBlPTImcG9pTmFtZT0lRUMlOUQlQjQlRUIlQTMlQjglRUMlOUIlQTglRUIlOTQlQTklRUMlQkIlQTglRUIlQjIlQTQlRUMlODUlOTgmY2VudGVyWD00NTcwMjY3JmNlbnRlclk9MTM1MTQwOCZ0aW1lPTIwMjIlRUIlODUlODQrMDglRUMlOUIlOTQrMTUlRUMlOUQlQkMrMDglM0EzMyZ0ZWw9MDItNzE0LTIxMjEmYWRkcj0lRUMlODQlOUMlRUMlOUElQjgrJUVCJUE3JTg4JUVEJThGJUFDJUVBJUI1JUFDKyVFQiVBNyU4OCVFRCU4RiVBQyVFQiU4QyU4MCVFQiVBMSU5Qys3OA=="><img class="icon" src="images/tmap.svg" alt="티맵">
         <p>티맵</p>
       </a>
     </div>
