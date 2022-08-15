@@ -345,11 +345,35 @@
       <a href="https://poiweb.tmap.co.kr/app/share/position?contents=cGtleT0yNzg3MDYyMDAmcG9pSWQ9Mjc4NzA2MiZuYXZTZXE9MCZ0eXBlPTImcG9pTmFtZT0lRUMlOUQlQjQlRUIlQTMlQjglRUMlOUIlQTglRUIlOTQlQTklRUMlQkIlQTglRUIlQjIlQTQlRUMlODUlOTgmY2VudGVyWD00NTcwMjY3JmNlbnRlclk9MTM1MTQwOCZ0aW1lPTIwMjIlRUIlODUlODQrMDglRUMlOUIlOTQrMTUlRUMlOUQlQkMrMDglM0EzMyZ0ZWw9MDItNzE0LTIxMjEmYWRkcj0lRUMlODQlOUMlRUMlOUElQjgrJUVCJUE3JTg4JUVEJThGJUFDJUVBJUI1JUFDKyVFQiVBNyU4OCVFRCU4RiVBQyVFQiU4QyU4MCVFQiVBMSU5Qys3OA=="><img class="icon" src="images/tmap.svg" alt="티맵">
         <p>티맵</p>
       </a>
-      <a>
-      <button onclick="shareKakao()">
-        <img class="icon" src="images/tmap.svg" alt="공유하기">
+      <a id="create-kakaotalk-sharing-btn" href="javascript:;">
+        <img
+          src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+          alt="카카오톡 공유 보내기 버튼"
+        />
+        <script type="text/javascript">
+          Kakao.Share.createDefaultButton({
+            container: '#create-kakaotalk-sharing-btn',
+            objectType: 'feed',
+            content: {
+              title: '현우❤현애 모바일 청첩장',
+              description: '결혼식에 여러분을 초대합니다!',
+              link: {
+                mobileWebUrl: 'https://developers.kakao.com',
+                webUrl: 'https://developers.kakao.com',
+              },
+            },
+            buttons: [
+              {
+                title: '보러가기',
+                link: {
+                  mobileWebUrl: 'https://developers.kakao.com',
+                  webUrl: 'https://developers.kakao.com',
+                },
+              },
+            ],
+          })
+        </script>
         <p>공유하기</p>
-      </button>
       </a>
     </div>
 
@@ -420,7 +444,6 @@
         $('#big_img').attr('src', img);
       })
     })
-
   </script>
 </body>
 
