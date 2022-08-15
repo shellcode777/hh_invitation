@@ -52,6 +52,7 @@ table {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #969696;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  font-size: 0.9rem;
 }
 
 h1.title {
