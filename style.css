@@ -103,18 +103,10 @@ nav > a {
   color: #505050;
   width: 16.6%;
   height: 30px;
+  padding-top: 5px;
   background-color: #ffeded;
 }
 
-nav > a > div {
-  font-weight: bold;
-  font-size: 0.85rem;
-  color: #505050;
-  width: 16.6%;
-  height: 30px;
-  background-color: #ffeded;
-  text-align: center;
-}
 /* navigatinon bar end */
 
 
