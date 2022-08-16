@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>현우💓현애 모바일 청첩장</title>
- 
+
+  <!-- 카카오 API -->>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('c54b7bbce7b6fa59b01e11e86eb0e414');
+    // SDK 초기화 여부를 판단합니다.
+    console.log(Kakao.isInitialized());
+  </script>
+
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -18,6 +28,7 @@
   <!-- 웹폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
+
   <link rel="stylesheet" href="style.css">
   <script>
     window.onload = function () {
@@ -27,7 +38,14 @@
 </head>
 
 <body>
-
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a href="#">홈</a>
+    <a href="#invitation">전하는 말</a>
+    <a href="#call">연락처</a>
+    <a href="#gallery">갤러리</a>
+    <a href="#location">오시는 길</a>
+    <a href="#lv-container">방명록</a>
+  </nav>
   <div class="snowflakes" aria-hidden="true">
     <div class="snowflake" style = "font-size:11px">
       🍁
@@ -65,7 +83,7 @@
     <h1 id="text_wedding">Wedding</h1>
 
     <div class="main_text">
-      <h2 class="name">조현우 / 임현애</h2>
+      <h2 class="name">조현우 ❤️ 임현애</h2>
       <p class="info">
         2022.10.16 (일) 오후 12:30<br>
         이룸 웨딩 컨벤션 5층 단독홀
@@ -345,33 +363,19 @@
       <a href="https://poiweb.tmap.co.kr/app/share/position?contents=cGtleT0yNzg3MDYyMDAmcG9pSWQ9Mjc4NzA2MiZuYXZTZXE9MCZ0eXBlPTImcG9pTmFtZT0lRUMlOUQlQjQlRUIlQTMlQjglRUMlOUIlQTglRUIlOTQlQTklRUMlQkIlQTglRUIlQjIlQTQlRUMlODUlOTgmY2VudGVyWD00NTcwMjY3JmNlbnRlclk9MTM1MTQwOCZ0aW1lPTIwMjIlRUIlODUlODQrMDglRUMlOUIlOTQrMTUlRUMlOUQlQkMrMDglM0EzMyZ0ZWw9MDItNzE0LTIxMjEmYWRkcj0lRUMlODQlOUMlRUMlOUElQjgrJUVCJUE3JTg4JUVEJThGJUFDJUVBJUI1JUFDKyVFQiVBNyU4OCVFRCU4RiVBQyVFQiU4QyU4MCVFQiVBMSU5Qys3OA=="><img class="icon" src="images/tmap.svg" alt="티맵">
         <p>티맵</p>
       </a>
-      <a id="create-kakaotalk-sharing-btn" href="javascript:;">
+      <a onclick="sendKakao()" href="javascript:;">
         <img
           src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
           alt="카카오톡 공유 보내기 버튼"
         />
-        <script type="text/javascript">
-          Kakao.Share.createDefaultButton({
-            container: '#create-kakaotalk-sharing-btn',
-            objectType: 'feed',
-            content: {
-              title: '현우❤현애 모바일 청첩장',
-              description: '결혼식에 여러분을 초대합니다!',
-              link: {
-                mobileWebUrl: 'https://developers.kakao.com',
-                webUrl: 'https://developers.kakao.com',
-              },
-            },
-            buttons: [
-              {
-                title: '보러가기',
-                link: {
-                  mobileWebUrl: 'https://developers.kakao.com',
-                  webUrl: 'https://developers.kakao.com',
-                },
-              },
-            ],
-          })
+        <script>
+          var sendKakao = function() {
+          // 메시지 공유 함수
+            Kakao.Link.sendScrap({
+              requestUrl: 'https://shellcode777.github.io', // 페이지 url
+              templateId: 81453 // 메시지템플릿 번호
+          });
+        }
         </script>
         <p>공유하기</p>
       </a>

@@ -82,6 +82,26 @@ h1 {
 }
 
 
+/* navigatinon bar */
+
+nav {
+  font-family: 'MapoGoldenPier';
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav > a {
+  width: 16.6%;
+  height: 100%;
+  color: #505050;
+  background-color: #ffeded;
+}
+/* navigatinon bar end */
+
+
 /* section calendar */
 
 .sec_cal {
