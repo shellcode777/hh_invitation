@@ -84,6 +84,10 @@ h1 {
 
 /* navigatinon bar */
 
+a:hover {
+  color: darkgray;
+}
+
 nav {
   font-family: 'MapoGoldenPier';
 }
@@ -94,6 +98,7 @@ nav {
 }
 
 nav > a {
+  font-size: 0.7rem;
   width: 16.6%;
   height: 100%;
   color: #505050;
