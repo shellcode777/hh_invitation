@@ -115,7 +115,7 @@ nav > a {
 .sec_cal {
   width: 360px;
   margin: 0 auto;
-  font-family: "NotoSansR";
+  font-weight: bold;
 }
 
 .sec_cal .cal_nav {
@@ -222,6 +222,7 @@ nav > a {
 .sec_cal .cal_wrap .day.disable {
   color: #ddd;
 }
+
 /* 캘린더 끝 */
 
 
