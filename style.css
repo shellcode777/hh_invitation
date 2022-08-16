@@ -98,11 +98,22 @@ nav {
 }
 
 nav > a {
-  font-size: 0.7rem;
-  width: 16.6%;
-  height: 100%;
+  font-weight: bold;
+  font-size: 0.85rem;
   color: #505050;
+  width: 16.6%;
+  height: 30px;
   background-color: #ffeded;
+}
+
+nav > a > div {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #505050;
+  width: 16.6%;
+  height: 30px;
+  background-color: #ffeded;
+  text-align: center;
 }
 /* navigatinon bar end */
 
