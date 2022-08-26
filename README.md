@@ -12,5 +12,6 @@ https://songsong.dev/11
 오디오재생  
 https://hongku.tistory.com/364
 
-티맵 연동 스키마  
+티맵 연동  
 https://www.clien.net/service/board/cm_iphonien/12611759
+ 
