@@ -8,3 +8,6 @@ https://www.goohwan.net/entry/%EB%94%94%EC%8A%A4%EC%BB%A4%EC%8A%A4-%EB%8C%93%EA%
 
 달력  
 https://songsong.dev/11
+
+오디오재생  
+https://hongku.tistory.com/364
