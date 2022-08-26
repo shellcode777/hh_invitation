@@ -82,9 +82,12 @@ h1 {
 }
 
 #lv-container {
-  padding: 20px
+  padding: 20px;
 }
 
+#taboola-livere {
+  display: none;
+}
 
 /* navigatinon bar */
 
