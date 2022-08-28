@@ -22,6 +22,10 @@ body {
   font-family: 'MapoGoldenPier';
 }
 
+footer {
+  background-color: #ffeded;
+}
+
 button {
   font-family: 'MapoGoldenPier';
 }
